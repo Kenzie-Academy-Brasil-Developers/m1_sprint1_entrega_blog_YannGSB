@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label><br>
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui..." required/><br><br>
+
+        <label for="email">Email</label><br>
+        <input id="email" type="email" name="email" placeholder="Digite seu email aqui..." required/><br><br>
+
+        <label for="motivo">O que te motivou a participar do evento?</label><br>
+        <textarea id="motivo" name="descricao" form="usrform" placeholder="Descreva aqui..." required></textarea><br><br>
+
+        <label for="modulo">Selecione seu módulo</label><br>
+        <select id="modulo" name="modulo">
+            <option disabled selected>Escolher módulo</option>
+            <option value="modulo_1">Módulo 1</option>
+            <option value="modulo_2">Módulo 2</option>
+            <option value="modulo_3">Módulo 3</option>
+            <option value="modulo_4">Módulo 4</option>
+            <option value="modulo_5">Módulo 5</option>
+            <option value="modulo_6">Módulo 6</option>
+        </select><br><br>
+
+        <label for="senha">Cadastre uma senha</label><br>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha aqui..." required/><br><br>
+
+        <label for="repetirsenha">Confirme a senha</label><br>
+        <input id="repetirsenha" type="password" name="repetirsenha" placeholder="Repita a senha..." required/><br><br>
+
+        <p>Deseja receber novidades em seu email?</p>
+        <label id="novidades">Sim</label>
+        <input type="radio" id="sim" name="sim_nao" value="sim" required/>
+        <label id="novidades">Não</label>
+        <input type="radio" id="nao" name="sim_nao" value="nao" required/><br><br>
+
+        <input type="submit" value="Cadastrar"/>
+    </form>
+</body>
+</html>
